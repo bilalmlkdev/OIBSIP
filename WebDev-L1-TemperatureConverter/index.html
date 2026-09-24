@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Temperature Converter</title>
+  <meta name="description" content="Convert temperatures between Celsius, Fahrenheit, and Kelvin with live validation." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <div class="card">
+      <p class="eyebrow">OIBSIP · Level 1 · Task 3</p>
+      <h1>Temperature Converter</h1>
+      <p class="sub">Celsius · Fahrenheit · Kelvin — with absolute-zero guards.</p>
+
+      <form id="convert-form" novalidate>
+        <label class="field">
+          <span>Value</span>
+          <input
+            id="temp-input"
+            name="temp"
+            type="text"
+            inputmode="decimal"
+            placeholder="e.g. 100"
+            autocomplete="off"
+            aria-describedby="input-error"
+          />
+        </label>
+        <p id="input-error" class="error" role="alert" hidden></p>
+
+        <fieldset class="field">
+          <legend>From unit</legend>
+          <div class="radios" role="radiogroup" aria-label="Input unit">
+            <label><input type="radio" name="from" value="C" checked /> °C</label>
+            <label><input type="radio" name="from" value="F" /> °F</label>
+            <label><input type="radio" name="from" value="K" /> K</label>
+          </div>
+        </fieldset>
+
+        <button class="btn" type="submit">Convert</button>
+      </form>
+
+      <section class="results" id="results" aria-live="polite" hidden>
+        <h2>Results</h2>
+        <div class="results__grid">
+          <div class="result">
+            <span class="result__label">Celsius</span>
+            <strong id="out-c">—</strong>
+          </div>
+          <div class="result">
+            <span class="result__label">Fahrenheit</span>
+            <strong id="out-f">—</strong>
+          </div>
+          <div class="result">
+            <span class="result__label">Kelvin</span>
+            <strong id="out-k">—</strong>
+          </div>
+        </div>
+        <p class="hint" id="result-note"></p>
+      </section>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
