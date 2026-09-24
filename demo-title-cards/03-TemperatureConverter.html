@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Title Card - Temperature Converter</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      font-family: "Outfit", system-ui, sans-serif;
+      background:
+        radial-gradient(circle at 20% 20%, rgba(56, 189, 248, 0.2), transparent 40%),
+        radial-gradient(circle at 80% 80%, rgba(99, 102, 241, 0.18), transparent 40%),
+        #0b1220;
+      color: #f1f5f9;
+      display: grid;
+      place-items: center;
+      min-height: 100vh;
+    }
+    .card {
+      width: min(920px, calc(100% - 64px));
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      background: rgba(15, 23, 42, 0.85);
+      border-radius: 24px;
+      padding: 64px 72px;
+      box-shadow: 0 40px 80px rgba(0, 0, 0, 0.45);
+      text-align: center;
+    }
+    .badge {
+      display: inline-block;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: #38bdf8;
+      background: rgba(56, 189, 248, 0.12);
+      border: 1px solid rgba(56, 189, 248, 0.35);
+      padding: 8px 16px;
+      border-radius: 999px;
+      margin-bottom: 28px;
+    }
+    h1 {
+      font-size: clamp(40px, 6vw, 64px);
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+      margin-bottom: 16px;
+    }
+    .task {
+      font-size: clamp(20px, 3vw, 28px);
+      font-weight: 600;
+      color: #94a3b8;
+      margin-bottom: 8px;
+    }
+    .desc {
+      font-size: 18px;
+      color: #64748b;
+      margin-bottom: 36px;
+    }
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px 28px;
+      color: #cbd5e1;
+      font-size: 16px;
+      font-weight: 500;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding-top: 28px;
+    }
+    .meta strong { color: #f8fafc; font-weight: 600; }
+    .bar {
+      width: 72px;
+      height: 4px;
+      background: linear-gradient(90deg, #38bdf8, #6366f1);
+      border-radius: 2px;
+      margin: 0 auto 28px;
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="badge">OIBSIP Demo</div>
+    <div class="bar" aria-hidden="true"></div>
+    <p class="task">Level 1 - Task 3</p>
+    <h1>Temperature Converter</h1>
+    <p class="desc">C / F / K converter</p>
+    <div class="meta">
+      <span><strong>Bilal Malik</strong></span>
+      <span>Web Development &amp; Designing</span>
+      <span>AICTE OIB-SIP</span>
+    </div>
+  </main>
+</body>
+</html>
