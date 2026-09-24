@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NovaDesk — Focus. Plan. Ship.</title>
+  <meta name="description" content="NovaDesk is a calm workspace for makers who ship — plan your week, protect deep work, finish what matters." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav" id="top">
+    <div class="container nav__inner">
+      <a class="nav__brand" href="#top" aria-label="NovaDesk home">
+        <span class="nav__logo" aria-hidden="true"></span>
+        NovaDesk
+      </a>
+      <button class="nav__toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span>
+      </button>
+      <nav class="nav__menu" id="nav-menu">
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
+        <a href="#stories">Stories</a>
+        <a class="btn btn--small btn--ghost" href="#cta">Get started</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow">Focus OS for makers</p>
+          <h1>Plan less.<br />Ship more.</h1>
+          <p class="lead">
+            NovaDesk is a calm workspace that turns scattered notes, tasks, and
+            reviews into one clear weekly system — so your best work actually ships.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#cta">Start free</a>
+            <a class="btn btn--secondary" href="#features">See features</a>
+          </div>
+          <p class="hero__note">No credit card · 14-day trial · Export anytime</p>
+        </div>
+        <div class="hero__visual" aria-hidden="true">
+          <div class="panel">
+            <div class="panel__bar">
+              <span></span><span></span><span></span>
+              <em>This week</em>
+            </div>
+            <ul class="panel__list">
+              <li class="done">Ship landing page</li>
+              <li class="done">Record demo video</li>
+              <li class="active">Write case study</li>
+              <li>Review pull request</li>
+              <li>Plan Friday retro</li>
+            </ul>
+            <div class="panel__meter">
+              <div class="panel__meter-fill"></div>
+            </div>
+            <p class="panel__meta">3 of 5 done · streak 12 days</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow">Features</p>
+          <h2>Everything you need.<br />Nothing you don’t.</h2>
+          <p class="section__sub">
+            Built for people who want a sharp daily system, not another bloated tool.
+          </p>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h16M4 12h10M4 17h7" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Daily focus list</h3>
+            <p>Three priorities max. Everything else waits — so your attention stays intentional.</p>
+          </article>
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Weekly reviews</h3>
+            <p>A five-minute Friday ritual that turns noise into a plan for next week.</p>
+          </article>
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Deep-work blocks</h3>
+            <p>Time-box focus sessions and keep chat, email, and meetings out of the way.</p>
+          </article>
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 7h10v10H7z"/><path d="M4 4h4v4H4zM16 4h4v4h-4zM4 16h4v4H4zM16 16h4v4h-4z"/></svg>
+            </div>
+            <h3>Project boards</h3>
+            <p>Kanban when you need it, simple checklists when you don’t. Switch freely.</p>
+          </article>
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l2.4 7.2H22l-6 4.4 2.3 7.1L12 17.8 5.7 21.7 8 14.6 2 10.2h7.6L12 3z" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Streaks that help</h3>
+            <p>Gentle consistency tracking — motivation without guilt-trip gamification.</p>
+          </article>
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 4h10a2 2 0 012 2v14l-6-3-6 3V6a2 2 0 012-2z"/><path d="M8 4H6a2 2 0 00-2 2v12"/></svg>
+            </div>
+            <h3>Notes beside tasks</h3>
+            <p>Capture context next to the work so you never dig through three apps again.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section section--alt" id="about">
+      <div class="container about">
+        <div class="about__copy">
+          <p class="eyebrow">About</p>
+          <h2>Built for people who ship.</h2>
+          <p>
+            Most tools pile on dashboards you never open. NovaDesk started as an
+            internal system for a small product team tired of context-switching —
+            one shared place for priorities, notes, and weekly truth.
+          </p>
+          <p>
+            We obsess over speed, keyboard-friendly flows, and an interface that
+            stays out of your way. If a feature doesn’t help you finish work,
+            it doesn’t ship.
+          </p>
+          <ul class="about__points">
+            <li>Keyboard-first navigation</li>
+            <li>Works offline, syncs when you’re back</li>
+            <li>Export everything — no lock-in</li>
+          </ul>
+        </div>
+        <div class="about__stats">
+          <div class="stat">
+            <strong>12k+</strong>
+            <span>weekly active makers</span>
+          </div>
+          <div class="stat">
+            <strong>4.9</strong>
+            <span>avg. focus rating</span>
+          </div>
+          <div class="stat">
+            <strong>38%</strong>
+            <span>fewer unfinished tasks</span>
+          </div>
+          <div class="stat">
+            <strong>&lt;80ms</strong>
+            <span>interaction latency</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="section" id="stories">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow">Stories</p>
+          <h2>Teams that stopped drowning in tabs.</h2>
+        </div>
+        <div class="quotes">
+          <figure class="quote">
+            <blockquote>
+              “We replaced three tools with NovaDesk. Friday reviews went from an
+              hour of chaos to fifteen honest minutes.”
+            </blockquote>
+            <figcaption>
+              <span class="quote__avatar" aria-hidden="true">AR</span>
+              <div>
+                <strong>Amina R.</strong>
+                <span>Product lead, Northline</span>
+              </div>
+            </figcaption>
+          </figure>
+          <figure class="quote">
+            <blockquote>
+              “The daily three actually changed how I work. I ship more and
+              context-switch half as much.”
+            </blockquote>
+            <figcaption>
+              <span class="quote__avatar" aria-hidden="true">JK</span>
+              <div>
+                <strong>James K.</strong>
+                <span>Indie developer</span>
+              </div>
+            </figcaption>
+          </figure>
+          <figure class="quote">
+            <blockquote>
+              “Clean, fast, and opinionated in the right ways. Our design team
+              lives in the project boards now.”
+            </blockquote>
+            <figcaption>
+              <span class="quote__avatar" aria-hidden="true">SL</span>
+              <div>
+                <strong>Sofia L.</strong>
+                <span>Studio founder</span>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta" id="cta">
+      <div class="container cta__inner">
+        <div>
+          <p class="eyebrow eyebrow--on-dark">Get started</p>
+          <h2>Make this the week you finish what matters.</h2>
+          <p class="cta__sub">Free for 14 days. Set up in under two minutes.</p>
+        </div>
+        <div class="cta__actions">
+          <a class="btn btn--light" href="mailto:hello@novadesk.example">Start free trial</a>
+          <a class="btn btn--outline-light" href="#features">Explore features</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a class="nav__brand" href="#top">
+          <span class="nav__logo" aria-hidden="true"></span>
+          NovaDesk
+        </a>
+        <p>A calm workspace for people who ship.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Product</h4>
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
+        <a href="#cta">Pricing</a>
+      </div>
+      <div class="footer__col">
+        <h4>Company</h4>
+        <a href="#stories">Stories</a>
+        <a href="mailto:hello@novadesk.example">Contact</a>
+        <a href="#top">Back to top</a>
+      </div>
+      <div class="footer__col">
+        <h4>Social</h4>
+        <a href="https://github.com/bilalmlkdev" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://linkedin.com/in/bilalmlkdev" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter / X</a>
+      </div>
+    </div>
+    <div class="container footer__base">
+      <p>© 2026 NovaDesk. All rights reserved.</p>
+      <p>hello@novadesk.example · +1 (555) 014-2026</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
