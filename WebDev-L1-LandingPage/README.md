@@ -41,6 +41,12 @@ Or open `index.html` directly in a browser.
 Editorial newspaper: cream paper, black rules, signal red, sharp cards
 
 
+## Demo video
+
+[Watch on YouTube](https://youtu.be/p4BcySJRsBg)
+
+<https://youtu.be/p4BcySJRsBg>
+
 ## Screenshots
 
 ![Desktop](screenshots/desktop.png)

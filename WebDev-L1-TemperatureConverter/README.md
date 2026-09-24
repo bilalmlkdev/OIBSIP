@@ -49,6 +49,12 @@ python3 -m http.server 8080
 
 Lab worksheet: graph paper, mono readouts, stamp button
 
+## Demo video
+
+[Watch on YouTube](https://youtu.be/4XVEwesE0Po)
+
+<https://youtu.be/4XVEwesE0Po>
+
 ## Screenshots
 
 ![Desktop](screenshots/desktop.png)

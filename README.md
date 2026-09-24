@@ -13,11 +13,11 @@
 
 ## Level 1 - Foundations (HTML / CSS / JS)
 
-| # | Project | Folder | Screenshots | Status |
-|---|---------|--------|-------------|--------|
-| 1 | Landing Page | [WebDev-L1-LandingPage](./WebDev-L1-LandingPage) | [desktop](./WebDev-L1-LandingPage/screenshots/desktop.png) / [mobile](./WebDev-L1-LandingPage/screenshots/mobile.png) | ✅ |
-| 2 | Personal Portfolio | [WebDev-L1-PersonalPortfolio](./WebDev-L1-PersonalPortfolio) | [desktop](./WebDev-L1-PersonalPortfolio/screenshots/desktop.png) / [mobile](./WebDev-L1-PersonalPortfolio/screenshots/mobile.png) | ✅ |
-| 3 | Temperature Converter | [WebDev-L1-TemperatureConverter](./WebDev-L1-TemperatureConverter) | [desktop](./WebDev-L1-TemperatureConverter/screenshots/desktop.png) / [mobile](./WebDev-L1-TemperatureConverter/screenshots/mobile.png) | ✅ |
+| # | Project | Folder | Screenshots | Demo | Status |
+|---|---------|--------|-------------|------|--------|
+| 1 | Landing Page | [WebDev-L1-LandingPage](./WebDev-L1-LandingPage) | [desktop](./WebDev-L1-LandingPage/screenshots/desktop.png) / [mobile](./WebDev-L1-LandingPage/screenshots/mobile.png) | [video](https://youtu.be/p4BcySJRsBg) | ✅ |
+| 2 | Personal Portfolio | [WebDev-L1-PersonalPortfolio](./WebDev-L1-PersonalPortfolio) | [desktop](./WebDev-L1-PersonalPortfolio/screenshots/desktop.png) / [mobile](./WebDev-L1-PersonalPortfolio/screenshots/mobile.png) | [video](https://youtu.be/w-BKsxpxKv4) | ✅ |
+| 3 | Temperature Converter | [WebDev-L1-TemperatureConverter](./WebDev-L1-TemperatureConverter) | [desktop](./WebDev-L1-TemperatureConverter/screenshots/desktop.png) / [mobile](./WebDev-L1-TemperatureConverter/screenshots/mobile.png) | [video](https://youtu.be/4XVEwesE0Po) | ✅ |
 
 **Rule:** All 3 tasks / HTML5 + CSS3 (JS optional on Task 2, required on Task 3)
 
@@ -25,12 +25,12 @@
 
 ## Level 2 - Interactive apps (Vanilla JS)
 
-| # | Project | Folder | Screenshots | Status |
-|---|---------|--------|-------------|--------|
-| 1 | Calculator | [WebDev-L2-Calculator](./WebDev-L2-Calculator) | [desktop](./WebDev-L2-Calculator/screenshots/desktop.png) / [mobile](./WebDev-L2-Calculator/screenshots/mobile.png) | ✅ |
-| 2 | Tribute Page | [WebDev-L2-TributePage](./WebDev-L2-TributePage) | [desktop](./WebDev-L2-TributePage/screenshots/desktop.png) / [mobile](./WebDev-L2-TributePage/screenshots/mobile.png) | ✅ |
-| 3 | To-Do Web App | [WebDev-L2-TodoApp](./WebDev-L2-TodoApp) | [desktop](./WebDev-L2-TodoApp/screenshots/desktop.png) / [mobile](./WebDev-L2-TodoApp/screenshots/mobile.png) | ✅ |
-| 4 | Login Auth System | [WebDev-L2-LoginAuth](./WebDev-L2-LoginAuth) | [login](./WebDev-L2-LoginAuth/screenshots/desktop.png) / [register](./WebDev-L2-LoginAuth/screenshots/register.png) / [dashboard](./WebDev-L2-LoginAuth/screenshots/dashboard.png) | ✅ |
+| # | Project | Folder | Screenshots | Demo | Status |
+|---|---------|--------|-------------|------|--------|
+| 1 | Calculator | [WebDev-L2-Calculator](./WebDev-L2-Calculator) | [desktop](./WebDev-L2-Calculator/screenshots/desktop.png) / [mobile](./WebDev-L2-Calculator/screenshots/mobile.png) | [video](https://youtu.be/FcxhAw40Yes) | ✅ |
+| 2 | Tribute Page | [WebDev-L2-TributePage](./WebDev-L2-TributePage) | [desktop](./WebDev-L2-TributePage/screenshots/desktop.png) / [mobile](./WebDev-L2-TributePage/screenshots/mobile.png) | [video](https://youtu.be/icEXMQpvZvs) | ✅ |
+| 3 | To-Do Web App | [WebDev-L2-TodoApp](./WebDev-L2-TodoApp) | [desktop](./WebDev-L2-TodoApp/screenshots/desktop.png) / [mobile](./WebDev-L2-TodoApp/screenshots/mobile.png) | [video](https://youtu.be/Zo4X99HHM0k) | ✅ |
+| 4 | Login Auth System | [WebDev-L2-LoginAuth](./WebDev-L2-LoginAuth) | [login](./WebDev-L2-LoginAuth/screenshots/desktop.png) / [register](./WebDev-L2-LoginAuth/screenshots/register.png) / [dashboard](./WebDev-L2-LoginAuth/screenshots/dashboard.png) | [video](https://youtu.be/cP0B-1BO-18) | ✅ |
 
 **Rule:** All 4 tasks / HTML + CSS + Vanilla JS (Login: localStorage + hashing)
 
@@ -57,8 +57,8 @@
 
 ## Progress
 
-- [x] Level 1: all 3 tasks complete with screenshots
-- [x] Level 2: all 4 tasks complete with screenshots
+- [x] Level 1: all 3 tasks complete with screenshots + demo videos
+- [x] Level 2: all 4 tasks complete with screenshots + demo videos
 - [ ] Level 3: Pizza Delivery (deferred)
 
 ## Commands

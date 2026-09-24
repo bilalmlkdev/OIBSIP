@@ -49,6 +49,12 @@ python3 -m http.server 8080
 
 Physical calculator: beige plastic, green LCD, hard key shadows
 
+## Demo video
+
+[Watch on YouTube](https://youtu.be/FcxhAw40Yes)
+
+<https://youtu.be/FcxhAw40Yes>
+
 ## Screenshots
 
 ![Desktop](screenshots/desktop.png)

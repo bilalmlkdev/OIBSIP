@@ -57,6 +57,12 @@ python3 -m http.server 8080
 
 Brutalist form: white card, black borders, hazard yellow, drop shadow
 
+## Demo video
+
+[Watch on YouTube](https://youtu.be/cP0B-1BO-18)
+
+<https://youtu.be/cP0B-1BO-18>
+
 ## Screenshots
 
 ### Login

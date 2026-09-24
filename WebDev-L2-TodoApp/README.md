@@ -40,6 +40,12 @@ python3 -m http.server 8080
 
 Notebook page: blue rules, red margin, handwriting font
 
+## Demo video
+
+[Watch on YouTube](https://youtu.be/Zo4X99HHM0k)
+
+<https://youtu.be/Zo4X99HHM0k>
+
 ## Screenshots
 
 ![Desktop](screenshots/desktop.png)

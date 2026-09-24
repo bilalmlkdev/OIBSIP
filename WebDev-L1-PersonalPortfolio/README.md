@@ -39,6 +39,12 @@ python3 -m http.server 8080
 Print CV: lined sheet, mono labels, offset avatar shadow
 
 
+## Demo video
+
+[Watch on YouTube](https://youtu.be/w-BKsxpxKv4)
+
+<https://youtu.be/w-BKsxpxKv4>
+
 ## Screenshots
 
 ![Desktop](screenshots/desktop.png)

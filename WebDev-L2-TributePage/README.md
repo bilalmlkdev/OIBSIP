@@ -47,6 +47,12 @@ Use a public-domain source (e.g. Wikimedia Commons *Ada Lovelace portrait*).
 
 Archive letterpress: cream stock, oxblood rules, black band
 
+## Demo video
+
+[Watch on YouTube](https://youtu.be/icEXMQpvZvs)
+
+<https://youtu.be/icEXMQpvZvs>
+
 ## Screenshots
 
 ![Desktop](screenshots/desktop.png)
