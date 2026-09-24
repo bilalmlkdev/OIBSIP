@@ -1,6 +1,6 @@
 # Landing Page - NovaDesk
 
-**OIBSIP · Web Development & Designing · Level 1 · Task 1**
+**OIBSIP / Web Development & Designing / Level 1 / Task 1**
 
 Static marketing landing page for a fictional productivity product (**NovaDesk**).
 Built with **HTML5 + CSS3** (tiny optional JS for the mobile menu only).
@@ -14,7 +14,7 @@ Built with **HTML5 + CSS3** (tiny optional JS for the mobile menu only).
 - [x] Consistent palette across all sections (ink navy, warm cream, coral)
 - [x] Responsive via CSS Grid + Flexbox - verified at 1440 / 768 / 375 / 320
 - [x] No overlap; explicit `box-sizing`, spacing scale, safe paddings
-- [x] Typography: display serif (Fraunces) vs body sans (Space Grotesk), clear scale
+- [x] Typography: Libre Baskerville (display) vs Libre Franklin (body), IBM Plex Mono labels
 
 ## Sections
 
@@ -49,6 +49,6 @@ Editorial newspaper: cream paper, black rules, signal red, sharp cards
 
 ## Author
 
-Bilal Malik · [GitHub](https://github.com/bilalmlkdev) · [LinkedIn](https://linkedin.com/in/bilalmlkdev)
+Bilal Malik / [GitHub](https://github.com/bilalmlkdev) / [LinkedIn](https://linkedin.com/in/bilalmlkdev)
 
-Part of [OIBSIP](https://github.com/bilalmlkdev/OIBSIP) · `#oasisinfobyte`
+Part of [OIBSIP](https://github.com/bilalmlkdev/OIBSIP) / `#oasisinfobyte`

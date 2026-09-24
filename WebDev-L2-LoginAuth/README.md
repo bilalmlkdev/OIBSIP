@@ -1,6 +1,6 @@
 # Login Auth
 
-**OIBSIP · Web Development & Designing · Level 2 · Task 4**
+**OIBSIP / Web Development & Designing / Level 2 / Task 4**
 
 Client-side register / login / dashboard / logout demo. **Passwords hashed with
 SHA-256 (Web Crypto)** - never stored in plain text. Accounts live in
@@ -77,6 +77,6 @@ Brutalist form: white card, black borders, hazard yellow, drop shadow
 
 ## Author
 
-Bilal Malik · [GitHub](https://github.com/bilalmlkdev) · [LinkedIn](https://linkedin.com/in/bilalmlkdev)
+Bilal Malik / [GitHub](https://github.com/bilalmlkdev) / [LinkedIn](https://linkedin.com/in/bilalmlkdev)
 
-Part of [OIBSIP](https://github.com/bilalmlkdev/OIBSIP) · `#oasisinfobyte`
+Part of [OIBSIP](https://github.com/bilalmlkdev/OIBSIP) / `#oasisinfobyte`

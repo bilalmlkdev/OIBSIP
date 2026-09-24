@@ -36,4 +36,4 @@ brave --headless=new --screenshot=01-LandingPage.png --window-size=1920,1080 \
 
 ## Author
 
-Bilal Malik · `#oasisinfobyte`
+Bilal Malik / `#oasisinfobyte`

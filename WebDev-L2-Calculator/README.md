@@ -1,6 +1,6 @@
 # Calculator
 
-**OIBSIP · Web Development & Designing · Level 2 · Task 1**
+**OIBSIP / Web Development & Designing / Level 2 / Task 1**
 
 Browser calculator with a clean button grid. **Vanilla JS - no `eval()`**;
 expression evaluation uses explicit operand/operator state.
@@ -57,6 +57,6 @@ Physical calculator: beige plastic, green LCD, hard key shadows
 
 ## Author
 
-Bilal Malik · [GitHub](https://github.com/bilalmlkdev) · [LinkedIn](https://linkedin.com/in/bilalmlkdev)
+Bilal Malik / [GitHub](https://github.com/bilalmlkdev) / [LinkedIn](https://linkedin.com/in/bilalmlkdev)
 
-Part of [OIBSIP](https://github.com/bilalmlkdev/OIBSIP) · `#oasisinfobyte`
+Part of [OIBSIP](https://github.com/bilalmlkdev/OIBSIP) / `#oasisinfobyte`

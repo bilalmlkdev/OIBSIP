@@ -1,6 +1,6 @@
 # Temperature Converter
 
-**OIBSIP · Web Development & Designing · Level 1 · Task 3**
+**OIBSIP / Web Development & Designing / Level 1 / Task 3**
 
 Interactive converter for **Celsius / Fahrenheit / Kelvin** with input validation
 and absolute-zero edge handling. Vanilla HTML + CSS + JavaScript.
@@ -40,7 +40,7 @@ python3 -m http.server 8080
 
 | Input | Unit | Expect |
 |------:|------|--------|
-| `100` | °C | 212 °F · 373.15 K |
+| `100` | °C | 212 °F / 373.15 K |
 | `-40` | °C or °F | -40 both scales |
 | `-300` | °C | Error (below absolute zero) |
 | `abc` | any | Error (non-numeric) |
@@ -57,6 +57,6 @@ Lab worksheet: graph paper, mono readouts, stamp button
 
 ## Author
 
-Bilal Malik · [GitHub](https://github.com/bilalmlkdev) · [LinkedIn](https://linkedin.com/in/bilalmlkdev)
+Bilal Malik / [GitHub](https://github.com/bilalmlkdev) / [LinkedIn](https://linkedin.com/in/bilalmlkdev)
 
-Part of [OIBSIP](https://github.com/bilalmlkdev/OIBSIP) · `#oasisinfobyte`
+Part of [OIBSIP](https://github.com/bilalmlkdev/OIBSIP) / `#oasisinfobyte`

@@ -1,6 +1,6 @@
 # Personal Portfolio - Bilal Malik
 
-**OIBSIP · Web Development & Designing · Level 1 · Task 2**
+**OIBSIP / Web Development & Designing / Level 1 / Task 2**
 
 Personal portfolio website (digital résumé) built with **HTML5 + CSS3**
 (JavaScript only for the mobile menu).
@@ -13,12 +13,12 @@ Personal portfolio website (digital résumé) built with **HTML5 + CSS3**
 - [x] Projects: 3 cards (title, description, GitHub link)
 - [x] Contact: name, email fields + LinkedIn / GitHub links
 - [x] Smooth scroll navigation between sections (`scroll-behavior: smooth`)
-- [x] Consistent branding: dark teal palette, Outfit + JetBrains Mono
+- [x] Consistent branding: paper/ink palette, Source Serif 4 + IBM Plex
 - [x] Fully responsive - desktop and mobile (nav collapses ≤640px)
 
 ## Sections
 
-1. Fixed nav (About · Skills · Projects · Contact)  
+1. Fixed nav (About / Skills / Projects / Contact)  
 2. Hero + avatar  
 3. About  
 4. Skills grid  
@@ -47,6 +47,6 @@ Print CV: lined sheet, mono labels, offset avatar shadow
 
 ## Author
 
-Bilal Malik · [GitHub](https://github.com/bilalmlkdev) · [LinkedIn](https://linkedin.com/in/bilalmlkdev)
+Bilal Malik / [GitHub](https://github.com/bilalmlkdev) / [LinkedIn](https://linkedin.com/in/bilalmlkdev)
 
-Part of [OIBSIP](https://github.com/bilalmlkdev/OIBSIP) · `#oasisinfobyte`
+Part of [OIBSIP](https://github.com/bilalmlkdev/OIBSIP) / `#oasisinfobyte`

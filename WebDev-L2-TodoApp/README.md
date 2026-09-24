@@ -1,6 +1,6 @@
 # To-Do App
 
-**OIBSIP · Web Development & Designing · Level 2 · Task 3**
+**OIBSIP / Web Development & Designing / Level 2 / Task 3**
 
 Task list with localStorage persistence - vanilla JS, no frameworks, no build step.
 
@@ -48,6 +48,6 @@ Notebook page: blue rules, red margin, handwriting font
 
 ## Author
 
-Bilal Malik · [GitHub](https://github.com/bilalmlkdev) · [LinkedIn](https://linkedin.com/in/bilalmlkdev)
+Bilal Malik / [GitHub](https://github.com/bilalmlkdev) / [LinkedIn](https://linkedin.com/in/bilalmlkdev)
 
-Part of [OIBSIP](https://github.com/bilalmlkdev/OIBSIP) · `#oasisinfobyte`
+Part of [OIBSIP](https://github.com/bilalmlkdev/OIBSIP) / `#oasisinfobyte`

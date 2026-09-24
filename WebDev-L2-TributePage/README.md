@@ -1,6 +1,6 @@
 # Tribute Page - Ada Lovelace
 
-**OIBSIP · Web Development & Designing · Level 2 · Task 2**
+**OIBSIP / Web Development & Designing / Level 2 / Task 2**
 
 Visually engaging tribute to **Ada Lovelace** - mathematician and author of the
 first published algorithm for a general-purpose machine.
@@ -13,9 +13,8 @@ first published algorithm for a general-purpose machine.
 - [x] Biography: **4 original paragraphs** (paraphrased from public sources)
 - [x] Timeline of **6** key achievements (styled cards)
 - [x] Distinct quote block (1843 Analytical Engine line)
-- [x] **2 background colours:** deep violet (`#1a1630`) hero/quote · warm cream
-      (`#f6efe4`) body sections
-- [x] **2 font styles:** Playfair Display (display) · Source Sans 3 (body)
+- [x] **2 background colours:** ink black (`#141210`) hero/quote / cream stock (`#f3ebe0`) body
+- [x] **2 font styles:** Bodoni Moda (display) / EB Garamond (body)
 - [x] Responsive - single column on small screens
 
 ## Sections
@@ -56,6 +55,6 @@ Archive letterpress: cream stock, oxblood rules, black band
 
 ## Author
 
-Bilal Malik · [GitHub](https://github.com/bilalmlkdev) · [LinkedIn](https://linkedin.com/in/bilalmlkdev)
+Bilal Malik / [GitHub](https://github.com/bilalmlkdev) / [LinkedIn](https://linkedin.com/in/bilalmlkdev)
 
-Part of [OIBSIP](https://github.com/bilalmlkdev/OIBSIP) · `#oasisinfobyte`
+Part of [OIBSIP](https://github.com/bilalmlkdev/OIBSIP) / `#oasisinfobyte`
