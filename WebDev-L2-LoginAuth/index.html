@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login Auth — OIBSIP L2</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="shell">
+    <!-- AUTH VIEW -->
+    <section id="auth-view" class="card" aria-labelledby="auth-title">
+      <p class="eyebrow">OIBSIP · Level 2 · Task 4</p>
+      <div class="tabs" role="tablist">
+        <button type="button" class="tab is-active" id="tab-login" role="tab" aria-selected="true" aria-controls="login-panel">Login</button>
+        <button type="button" class="tab" id="tab-register" role="tab" aria-selected="false" aria-controls="register-panel">Register</button>
+      </div>
+
+      <!-- Login -->
+      <form id="login-panel" class="panel is-active" role="tabpanel" aria-labelledby="tab-login" autocomplete="on">
+        <h1 id="auth-title">Welcome back</h1>
+        <p class="sub">Sign in to your local demo account.</p>
+
+        <label for="login-email">Email</label>
+        <input id="login-email" name="email" type="email" required placeholder="you@example.com" autocomplete="email" />
+
+        <label for="login-password">Password</label>
+        <input id="login-password" name="password" type="password" required placeholder="••••••••" autocomplete="current-password" />
+
+        <p class="error" id="login-error" role="alert" hidden></p>
+
+        <button type="submit" class="btn">Login</button>
+      </form>
+
+      <!-- Register -->
+      <form id="register-panel" class="panel" role="tabpanel" aria-labelledby="tab-register" hidden autocomplete="on">
+        <h1>Create account</h1>
+        <p class="sub">Stored only in this browser (SHA-256 hashed).</p>
+
+        <label for="reg-name">Name</label>
+        <input id="reg-name" name="name" type="text" required placeholder="Ada Lovelace" autocomplete="name" maxlength="80" />
+
+        <label for="reg-email">Email</label>
+        <input id="reg-email" name="email" type="email" required placeholder="you@example.com" autocomplete="email" />
+
+        <label for="reg-password">Password</label>
+        <input id="reg-password" name="password" type="password" required placeholder="At least 8 characters" autocomplete="new-password" minlength="8" />
+
+        <label for="reg-confirm">Confirm password</label>
+        <input id="reg-confirm" name="confirm" type="password" required placeholder="Repeat password" autocomplete="new-password" minlength="8" />
+
+        <p class="error" id="register-error" role="alert" hidden></p>
+
+        <button type="submit" class="btn">Register</button>
+      </form>
+    </section>
+
+    <!-- DASHBOARD VIEW -->
+    <section id="dash-view" class="card card--dash" hidden aria-labelledby="dash-title">
+      <p class="eyebrow">OIBSIP · Level 2 · Task 4</p>
+      <div class="avatar" id="dash-avatar" aria-hidden="true">A</div>
+      <h1 id="dash-title">Dashboard</h1>
+      <p class="sub" id="dash-welcome">Welcome.</p>
+
+      <dl class="meta">
+        <div>
+          <dt>Name</dt>
+          <dd id="dash-name">—</dd>
+        </div>
+        <div>
+          <dt>Email</dt>
+          <dd id="dash-email">—</dd>
+        </div>
+        <div>
+          <dt>Session</dt>
+          <dd id="dash-since">—</dd>
+        </div>
+      </dl>
+
+      <button type="button" class="btn btn--ghost" id="logout-btn">Logout</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
