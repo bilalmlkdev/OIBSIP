@@ -6,92 +6,136 @@
   <title>Title Card - Calculator</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     html, body { height: 100%; }
     body {
-      font-family: "Outfit", system-ui, sans-serif;
-      background:
-        radial-gradient(circle at 20% 20%, rgba(56, 189, 248, 0.2), transparent 40%),
-        radial-gradient(circle at 80% 80%, rgba(99, 102, 241, 0.18), transparent 40%),
-        #0b1220;
-      color: #f1f5f9;
+      font-family: "Space Mono", monospace;
+      background: #2a2622;
+      color: #e8e2d6;
       display: grid;
       place-items: center;
       min-height: 100vh;
     }
-    .card {
-      width: min(920px, calc(100% - 64px));
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      background: rgba(15, 23, 42, 0.85);
-      border-radius: 24px;
-      padding: 64px 72px;
-      box-shadow: 0 40px 80px rgba(0, 0, 0, 0.45);
-      text-align: center;
+    .device {
+      width: min(920px, calc(100% - 56px));
+      background: linear-gradient(160deg, #d4cfc4, #c4bdb0);
+      border: 3px solid #1a1816;
+      border-radius: 18px;
+      padding: 40px 48px 44px;
+      box-shadow:
+        0 12px 0 #1a1816,
+        0 28px 40px rgba(0, 0, 0, 0.45),
+        inset 0 2px 0 #f0ebe0;
+      color: #1a1816;
     }
-    .badge {
-      display: inline-block;
-      font-size: 14px;
-      font-weight: 600;
+    .label {
+      font-size: 13px;
       letter-spacing: 0.16em;
       text-transform: uppercase;
-      color: #38bdf8;
-      background: rgba(56, 189, 248, 0.12);
-      border: 1px solid rgba(56, 189, 248, 0.35);
-      padding: 8px 16px;
-      border-radius: 999px;
-      margin-bottom: 28px;
+      color: #5a554c;
+      text-align: center;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+    .lcd {
+      background: #c8d9b8;
+      border: 3px solid #1a1816;
+      border-radius: 6px;
+      box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.18);
+      padding: 22px 28px;
+      margin-bottom: 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 72px;
+    }
+    .lcd .mode {
+      font-size: 13px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #3a4a32;
+    }
+    .lcd .val {
+      font-size: 48px;
+      font-weight: 700;
+      color: #1a1816;
+      line-height: 1;
     }
     h1 {
-      font-size: clamp(40px, 6vw, 64px);
+      font-size: clamp(36px, 5vw, 52px);
       font-weight: 700;
-      letter-spacing: -0.03em;
-      line-height: 1.1;
-      margin-bottom: 16px;
+      text-align: center;
+      letter-spacing: -0.02em;
+      margin-bottom: 12px;
+      text-transform: uppercase;
     }
-    .task {
-      font-size: clamp(20px, 3vw, 28px);
-      font-weight: 600;
-      color: #94a3b8;
-      margin-bottom: 8px;
+    .keys {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 28px;
     }
+    .key {
+      width: 56px;
+      height: 44px;
+      background: #f0ebe0;
+      border: 2px solid #1a1816;
+      border-radius: 6px;
+      box-shadow: 0 4px 0 #1a1816;
+      display: grid;
+      place-items: center;
+      font-weight: 700;
+      font-size: 16px;
+    }
+    .key.op { background: #4a5a6a; color: #f0ebe0; }
+    .key.eq { background: #c45a28; color: #f0ebe0; }
     .desc {
-      font-size: 18px;
-      color: #64748b;
-      margin-bottom: 36px;
+      text-align: center;
+      font-size: 16px;
+      color: #3a3630;
+      line-height: 1.55;
+      margin-bottom: 28px;
+      max-width: 36em;
+      margin-left: auto;
+      margin-right: auto;
     }
     .meta {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 12px 28px;
-      color: #cbd5e1;
-      font-size: 16px;
-      font-weight: 500;
-      border-top: 1px solid rgba(255, 255, 255, 0.08);
-      padding-top: 28px;
+      gap: 10px 28px;
+      border-top: 2px solid #1a1816;
+      padding-top: 18px;
+      font-size: 13px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #3a3630;
     }
-    .meta strong { color: #f8fafc; font-weight: 600; }
-    .bar {
-      width: 72px;
-      height: 4px;
-      background: linear-gradient(90deg, #38bdf8, #6366f1);
-      border-radius: 2px;
-      margin: 0 auto 28px;
-    }
+    .meta strong { color: #c45a28; font-weight: 700; }
   </style>
 </head>
 <body>
-  <main class="card">
-    <div class="badge">OIBSIP Demo</div>
-    <div class="bar" aria-hidden="true"></div>
-    <p class="task">Level 2 - Task 1</p>
+  <main class="device">
+    <p class="label">OIBSIP Demo / Level 2 - Task 1</p>
+    <div class="lcd">
+      <span class="mode">Ready</span>
+      <span class="val">0</span>
+    </div>
     <h1>Calculator</h1>
-    <p class="desc">Vanilla JS calculator</p>
+    <div class="keys" aria-hidden="true">
+      <span class="key">C</span>
+      <span class="key">7</span>
+      <span class="key">8</span>
+      <span class="key">9</span>
+      <span class="key op">+</span>
+      <span class="key eq">=</span>
+    </div>
+    <p class="desc">Physical device UI - beige plastic body, green LCD, hard key shadows.</p>
     <div class="meta">
       <span><strong>Bilal Malik</strong></span>
-      <span>Web Development &amp; Designing</span>
+      <span>Web Development / Designing</span>
       <span>AICTE OIB-SIP</span>
     </div>
   </main>

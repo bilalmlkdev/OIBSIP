@@ -6,94 +6,117 @@
   <title>Title Card - Tribute Page</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,700&family=EB+Garamond:wght@400;500&display=swap" rel="stylesheet" />
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     html, body { height: 100%; }
     body {
-      font-family: "Outfit", system-ui, sans-serif;
-      background:
-        radial-gradient(circle at 20% 20%, rgba(56, 189, 248, 0.2), transparent 40%),
-        radial-gradient(circle at 80% 80%, rgba(99, 102, 241, 0.18), transparent 40%),
-        #0b1220;
-      color: #f1f5f9;
+      font-family: "EB Garamond", Georgia, serif;
+      background: #0f0f0f;
+      color: #f4efe4;
       display: grid;
       place-items: center;
       min-height: 100vh;
     }
-    .card {
-      width: min(920px, calc(100% - 64px));
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      background: rgba(15, 23, 42, 0.85);
-      border-radius: 24px;
-      padding: 64px 72px;
-      box-shadow: 0 40px 80px rgba(0, 0, 0, 0.45);
+    .sheet {
+      width: min(940px, calc(100% - 56px));
+      background: #f0e8d8;
+      color: #1c1410;
+      border-top: 14px solid #6b1e2a;
+      border-bottom: 14px solid #6b1e2a;
+      padding: 64px 72px 56px;
       text-align: center;
+      box-shadow: 0 24px 48px rgba(0, 0, 0, 0.5);
+      position: relative;
     }
-    .badge {
-      display: inline-block;
+    .band {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 14px;
+      background: #6b1e2a;
+      margin-top: -14px;
+    }
+    .kicker {
+      font-family: "Bodoni Moda", Georgia, serif;
       font-size: 14px;
-      font-weight: 600;
-      letter-spacing: 0.16em;
+      letter-spacing: 0.28em;
       text-transform: uppercase;
-      color: #38bdf8;
-      background: rgba(56, 189, 248, 0.12);
-      border: 1px solid rgba(56, 189, 248, 0.35);
-      padding: 8px 16px;
-      border-radius: 999px;
+      color: #6b1e2a;
       margin-bottom: 28px;
+      font-weight: 700;
     }
     h1 {
-      font-size: clamp(40px, 6vw, 64px);
+      font-family: "Bodoni Moda", Georgia, serif;
+      font-size: clamp(48px, 7vw, 72px);
       font-weight: 700;
-      letter-spacing: -0.03em;
-      line-height: 1.1;
-      margin-bottom: 16px;
+      line-height: 1.08;
+      letter-spacing: 0.02em;
+      margin-bottom: 20px;
     }
-    .task {
-      font-size: clamp(20px, 3vw, 28px);
-      font-weight: 600;
-      color: #94a3b8;
-      margin-bottom: 8px;
+    .orn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      margin-bottom: 24px;
+      color: #6b1e2a;
+      font-size: 22px;
+    }
+    .orn::before, .orn::after {
+      content: "";
+      width: 72px;
+      height: 1px;
+      background: #6b1e2a;
     }
     .desc {
-      font-size: 18px;
-      color: #64748b;
-      margin-bottom: 36px;
+      font-size: 20px;
+      line-height: 1.6;
+      color: #3a2e28;
+      max-width: 32em;
+      margin: 0 auto 36px;
+      font-style: italic;
     }
     .meta {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 12px 28px;
-      color: #cbd5e1;
-      font-size: 16px;
-      font-weight: 500;
-      border-top: 1px solid rgba(255, 255, 255, 0.08);
-      padding-top: 28px;
+      gap: 10px 32px;
+      border-top: 1px solid #6b1e2a;
+      padding-top: 22px;
+      font-family: "Bodoni Moda", Georgia, serif;
+      font-size: 13px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: #3a2e28;
     }
-    .meta strong { color: #f8fafc; font-weight: 600; }
-    .bar {
-      width: 72px;
-      height: 4px;
-      background: linear-gradient(90deg, #38bdf8, #6366f1);
-      border-radius: 2px;
-      margin: 0 auto 28px;
+    .meta strong { color: #6b1e2a; font-weight: 700; }
+    .folio {
+      position: absolute;
+      bottom: 28px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-family: "Bodoni Moda", Georgia, serif;
+      font-size: 12px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #8a7a70;
     }
   </style>
 </head>
 <body>
-  <main class="card">
-    <div class="badge">OIBSIP Demo</div>
-    <div class="bar" aria-hidden="true"></div>
-    <p class="task">Level 2 - Task 2</p>
+  <main class="sheet">
+    <p class="kicker">OIBSIP Demo / Level 2 - Task 2</p>
     <h1>Tribute Page</h1>
-    <p class="desc">Ada Lovelace tribute</p>
+    <div class="orn" aria-hidden="true">&#10086;</div>
+    <p class="desc">Ada Lovelace tribute - archive letterpress with cream stock and oxblood bands.</p>
     <div class="meta">
       <span><strong>Bilal Malik</strong></span>
-      <span>Web Development &amp; Designing</span>
+      <span>Web Development / Designing</span>
       <span>AICTE OIB-SIP</span>
     </div>
+    <span class="folio">Plate II</span>
   </main>
 </body>
 </html>

@@ -1,18 +1,18 @@
 # Demo title cards
 
-Static first-frame cards for OIBSIP demo videos (2 seconds each).
+Static first-frame cards for OIBSIP demo videos (2 seconds each). Each card matches the art direction of its task (no shared template look).
 
 ## Files
 
-| File | Task |
-|------|------|
-| `01-LandingPage.png` | L1 Task 1 - Landing Page |
-| `02-PersonalPortfolio.png` | L1 Task 2 - Personal Portfolio |
-| `03-TemperatureConverter.png` | L1 Task 3 - Temperature Converter |
-| `04-Calculator.png` | L2 Task 1 - Calculator |
-| `05-TributePage.png` | L2 Task 2 - Tribute Page |
-| `06-TodoApp.png` | L2 Task 3 - To-Do App |
-| `07-LoginAuth.png` | L2 Task 4 - Login Auth |
+| File | Task | Look |
+|------|------|------|
+| `01-LandingPage.png` | L1 Task 1 - Landing Page | Editorial newspaper |
+| `02-PersonalPortfolio.png` | L1 Task 2 - Personal Portfolio | Print CV / lined sheet |
+| `03-TemperatureConverter.png` | L1 Task 3 - Temperature Converter | Lab worksheet / graph paper |
+| `04-Calculator.png` | L2 Task 1 - Calculator | Physical device / beige + LCD |
+| `05-TributePage.png` | L2 Task 2 - Tribute Page | Archive letterpress / oxblood |
+| `06-TodoApp.png` | L2 Task 3 - To-Do App | Notebook page / handwriting |
+| `07-LoginAuth.png` | L2 Task 4 - Login Auth | Brutalist / hazard yellow |
 
 Each `.png` is **1920x1080**, ready to drop into a video editor.
 
@@ -29,8 +29,8 @@ Open the matching `.html` in a browser and screenshot at 1920x1080, or:
 
 ```bash
 cd demo-title-cards
-# example with headless Chrome/Brave
-brave --headless=new --screenshot=01-LandingPage.png --window-size=1920,1080 \
+# example with headless Brave (writes into this folder; snap /tmp is private)
+snap run brave --headless=new --screenshot="$PWD/01-LandingPage.png" --window-size=1920,1080 \
   "file://$PWD/01-LandingPage.html"
 ```
 

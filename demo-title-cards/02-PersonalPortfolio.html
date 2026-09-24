@@ -6,92 +6,105 @@
   <title>Title Card - Personal Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     html, body { height: 100%; }
     body {
-      font-family: "Outfit", system-ui, sans-serif;
+      font-family: "Source Serif 4", Georgia, serif;
       background:
-        radial-gradient(circle at 20% 20%, rgba(56, 189, 248, 0.2), transparent 40%),
-        radial-gradient(circle at 80% 80%, rgba(99, 102, 241, 0.18), transparent 40%),
-        #0b1220;
-      color: #f1f5f9;
+        repeating-linear-gradient(
+          transparent 0,
+          transparent 31px,
+          #c9d4e0 31px,
+          #c9d4e0 32px
+        ),
+        #f3f0e8;
+      color: #1a1a1a;
       display: grid;
       place-items: center;
       min-height: 100vh;
     }
-    .card {
-      width: min(920px, calc(100% - 64px));
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      background: rgba(15, 23, 42, 0.85);
-      border-radius: 24px;
-      padding: 64px 72px;
-      box-shadow: 0 40px 80px rgba(0, 0, 0, 0.45);
-      text-align: center;
+    .sheet {
+      width: min(920px, calc(100% - 56px));
+      background: #faf7f0;
+      border: 1px solid #bbb;
+      border-left: 6px solid #2c4a6e;
+      padding: 56px 64px;
+      box-shadow: 14px 14px 0 #2c4a6e22;
+      position: relative;
     }
-    .badge {
-      display: inline-block;
-      font-size: 14px;
-      font-weight: 600;
+    .stamp {
+      position: absolute;
+      top: 36px;
+      right: 40px;
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 12px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      border: 2px solid #2c4a6e;
+      color: #2c4a6e;
+      padding: 8px 12px;
+      transform: rotate(3deg);
+    }
+    .avatar {
+      width: 72px;
+      height: 72px;
+      background: #2c4a6e;
+      color: #f3f0e8;
+      display: grid;
+      place-items: center;
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 22px;
+      font-weight: 500;
+      margin-bottom: 28px;
+      position: relative;
+      box-shadow: 8px 8px 0 #2c4a6e33;
+    }
+    .kicker {
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 13px;
       letter-spacing: 0.16em;
       text-transform: uppercase;
-      color: #38bdf8;
-      background: rgba(56, 189, 248, 0.12);
-      border: 1px solid rgba(56, 189, 248, 0.35);
-      padding: 8px 16px;
-      border-radius: 999px;
-      margin-bottom: 28px;
+      color: #5a6a7a;
+      margin-bottom: 14px;
     }
     h1 {
-      font-size: clamp(40px, 6vw, 64px);
-      font-weight: 700;
-      letter-spacing: -0.03em;
-      line-height: 1.1;
-      margin-bottom: 16px;
-    }
-    .task {
-      font-size: clamp(20px, 3vw, 28px);
+      font-size: clamp(44px, 6vw, 64px);
       font-weight: 600;
-      color: #94a3b8;
-      margin-bottom: 8px;
+      line-height: 1.1;
+      margin-bottom: 14px;
     }
     .desc {
-      font-size: 18px;
-      color: #64748b;
+      font-size: 20px;
+      color: #333;
       margin-bottom: 36px;
+      max-width: 34em;
+      line-height: 1.55;
     }
     .meta {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
-      gap: 12px 28px;
-      color: #cbd5e1;
-      font-size: 16px;
-      font-weight: 500;
-      border-top: 1px solid rgba(255, 255, 255, 0.08);
-      padding-top: 28px;
+      gap: 10px 28px;
+      border-top: 2px solid #1a1a1a;
+      padding-top: 18px;
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 14px;
+      letter-spacing: 0.04em;
     }
-    .meta strong { color: #f8fafc; font-weight: 600; }
-    .bar {
-      width: 72px;
-      height: 4px;
-      background: linear-gradient(90deg, #38bdf8, #6366f1);
-      border-radius: 2px;
-      margin: 0 auto 28px;
-    }
+    .meta strong { color: #2c4a6e; font-weight: 500; }
   </style>
 </head>
 <body>
-  <main class="card">
-    <div class="badge">OIBSIP Demo</div>
-    <div class="bar" aria-hidden="true"></div>
-    <p class="task">Level 1 - Task 2</p>
+  <main class="sheet">
+    <div class="stamp">OIBSIP Demo</div>
+    <div class="avatar" aria-hidden="true">BM</div>
+    <p class="kicker">Level 1 - Task 2 / Personal Portfolio</p>
     <h1>Personal Portfolio</h1>
-    <p class="desc">Digital resume site</p>
+    <p class="desc">Digital resume site - print CV layout with lined sheet and offset mark.</p>
     <div class="meta">
       <span><strong>Bilal Malik</strong></span>
-      <span>Web Development &amp; Designing</span>
+      <span>Web Development / Designing</span>
       <span>AICTE OIB-SIP</span>
     </div>
   </main>
