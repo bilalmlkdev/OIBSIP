@@ -53,6 +53,10 @@ python3 -m http.server 8080
 | Logout → refresh | back on login (session cleared) |
 | Register → refresh | still logged in (session restored) |
 
+## Design direction
+
+Brutalist form: white card, black borders, hazard yellow, drop shadow
+
 ## Screenshots
 
 ### Login

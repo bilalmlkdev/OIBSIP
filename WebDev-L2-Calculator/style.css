@@ -1,170 +1,162 @@
+/* Physical calculator: beige plastic body, green LCD, hard key shadows. */
 :root {
-  --bg: #0c1017;
-  --panel: #151b26;
-  --key: #1e2635;
-  --key-hover: #273144;
-  --fn: #2a3347;
-  --op: #3b82f6;
-  --op-hover: #2563eb;
-  --eq: #22c55e;
-  --eq-hover: #16a34a;
-  --text: #f1f5f9;
-  --muted: #94a3b8;
-  --err: #f87171;
-  --radius: 16px;
-  --font: "Outfit", system-ui, sans-serif;
+  --body: #c8c0b0;
+  --body-dark: #a89f8e;
+  --bezel: #2a2a28;
+  --lcd: #b8c9a8;
+  --lcd-ink: #1a2418;
+  --key: #e8e4da;
+  --key-dark: #3a3a38;
+  --key-eq: #c45c26;
+  --key-fn: #6b6560;
+  --font: "Space Mono", "Courier New", monospace;
 }
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 body {
+  margin: 0;
+  min-height: 100vh;
   font-family: var(--font);
   background:
-    radial-gradient(circle at 30% 20%, rgba(59, 130, 246, 0.15), transparent 45%),
-    var(--bg);
-  color: var(--text);
-  min-height: 100vh;
+    radial-gradient(circle at 50% 0%, #3a3530 0%, #1c1a18 55%, #121110 100%);
+  color: var(--lcd-ink);
   display: grid;
   place-items: center;
   padding: 1.5rem;
 }
 
 .wrap {
-  width: min(360px, 100%);
+  width: min(320px, 100%);
 }
 
 .eyebrow {
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
+  font-size: 0.65rem;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--muted);
+  color: #9a958c;
   text-align: center;
-  margin-bottom: 0.85rem;
+  margin: 0 0 0.75rem;
 }
 
 .calc {
-  background: var(--panel);
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  border-radius: calc(var(--radius) + 6px);
-  padding: 1.25rem;
-  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.45);
+  background: linear-gradient(165deg, var(--body), var(--body-dark));
+  border: 3px solid #6a6458;
+  border-radius: 8px 8px 12px 12px;
+  padding: 0.85rem 0.85rem 1rem;
+  box-shadow:
+    0 18px 40px rgba(0, 0, 0, 0.55),
+    inset 0 1px 0 rgba(255, 255, 255, 0.35);
 }
 
 .calc__display {
-  background: #0a0e14;
-  border-radius: var(--radius);
-  padding: 1.1rem 1.15rem 1rem;
-  margin-bottom: 1rem;
-  min-height: 96px;
+  background: var(--lcd);
+  border: 3px solid var(--bezel);
+  border-radius: 3px;
+  padding: 0.7rem 0.75rem 0.55rem;
+  min-height: 88px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-end;
-  gap: 0.25rem;
-  overflow: hidden;
+  gap: 0.15rem;
+  box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.25);
+  margin-bottom: 0.75rem;
 }
 
 .calc__expression {
-  font-size: 0.95rem;
-  color: var(--muted);
-  min-height: 1.3em;
-  word-break: break-all;
-  text-align: right;
+  font-size: 0.8rem;
+  color: rgba(26, 36, 24, 0.65);
+  min-height: 1.2em;
   width: 100%;
+  text-align: right;
+  word-break: break-all;
 }
 
 .calc__result {
-  font-size: clamp(2rem, 8vw, 2.6rem);
-  font-weight: 600;
-  letter-spacing: -0.03em;
-  font-variant-numeric: tabular-nums;
-  word-break: break-all;
-  text-align: right;
+  font-size: clamp(1.7rem, 7vw, 2.15rem);
+  font-weight: 700;
+  letter-spacing: 0.04em;
   width: 100%;
+  text-align: right;
+  word-break: break-all;
+  text-shadow: 0 0 0 transparent;
 }
 
 .calc__result.is-error {
-  color: var(--err);
-  font-size: 1.15rem;
-  font-weight: 600;
+  font-size: 0.95rem;
+  color: #5a1010;
 }
 
-/* CSS Grid button layout */
+/* Grid keys */
 .calc__keys {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 0.65rem;
+  gap: 0.5rem;
 }
 
 .key {
   font: inherit;
-  font-size: 1.2rem;
-  font-weight: 600;
-  min-height: 56px;
+  font-size: 1.15rem;
+  font-weight: 700;
+  min-height: 52px;
   border: 0;
-  border-radius: 14px;
-  background: var(--key);
-  color: var(--text);
+  border-radius: 4px;
+  background: linear-gradient(180deg, #f3f0e8, var(--key));
+  color: var(--key-dark);
   cursor: pointer;
-  transition: background 0.12s ease, transform 0.08s ease;
+  box-shadow:
+    0 3px 0 #9a9588,
+    0 4px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.05s ease, box-shadow 0.05s ease;
 }
 
 .key:hover {
-  background: var(--key-hover);
+  filter: brightness(1.03);
 }
 
 .key:active {
-  transform: scale(0.97);
+  transform: translateY(2px);
+  box-shadow: 0 1px 0 #9a9588, 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .key--fn {
-  background: var(--fn);
-  color: var(--muted);
-  font-size: 1.05rem;
-}
-
-.key--fn:hover {
-  background: #35405a;
-  color: var(--text);
+  background: linear-gradient(180deg, #7a7470, var(--key-fn));
+  color: #f0ebe3;
+  box-shadow:
+    0 3px 0 #4a4642,
+    0 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 1rem;
 }
 
 .key--op {
-  background: var(--op);
-  color: #fff;
-}
-
-.key--op:hover {
-  background: var(--op-hover);
+  background: linear-gradient(180deg, #4a5a6a, #3a4550);
+  color: #eef2f6;
+  box-shadow:
+    0 3px 0 #2a333c,
+    0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .key--eq {
-  background: var(--eq);
-  color: #052e16;
-  font-size: 1.35rem;
-}
-
-.key--eq:hover {
-  background: var(--eq-hover);
+  background: linear-gradient(180deg, #d4703a, var(--key-eq));
+  color: #fff;
+  box-shadow:
+    0 3px 0 #8a3a14,
+    0 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 1.25rem;
 }
 
 .key--zero {
   grid-column: span 2;
 }
 
-@media (max-width: 380px) {
+@media (max-width: 360px) {
   .key {
-    min-height: 50px;
-    font-size: 1.1rem;
-  }
-
-  .calc {
-    padding: 1rem;
+    min-height: 46px;
+    font-size: 1.05rem;
   }
 }

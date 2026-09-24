@@ -44,6 +44,10 @@ Replace the monogram `.portrait__frame` with:
 
 Use a public-domain source (e.g. Wikimedia Commons *Ada Lovelace portrait*).
 
+## Design direction
+
+Archive letterpress: cream stock, oxblood rules, black band
+
 ## Screenshots
 
 ![Desktop](screenshots/desktop.png)

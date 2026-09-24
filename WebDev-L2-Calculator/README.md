@@ -45,6 +45,10 @@ python3 -m http.server 8080
 | `9 ⌫` | `0` |
 | `0.5 + 0.25 =` | `0.75` |
 
+## Design direction
+
+Physical calculator: beige plastic, green LCD, hard key shadows
+
 ## Screenshots
 
 ![Desktop](screenshots/desktop.png)

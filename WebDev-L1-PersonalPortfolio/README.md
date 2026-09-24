@@ -34,15 +34,10 @@ python3 -m http.server 8080
 # open http://localhost:8080
 ```
 
-## Design tokens
+## Design direction
 
-| Token | Value |
-|-------|-------|
-| Background | `#0f1419` |
-| Surface | `#171e26` |
-| Accent | `#5eead4` |
-| Accent 2 | `#38bdf8` |
-| Fonts | Outfit · JetBrains Mono |
+Print CV: lined sheet, mono labels, offset avatar shadow
+
 
 ## Screenshots
 

@@ -36,6 +36,10 @@ python3 -m http.server 8080
 | Delete | removed, counts update |
 | Clear all tasks | empty-state messages show |
 
+## Design direction
+
+Notebook page: blue rules, red margin, handwriting font
+
 ## Screenshots
 
 ![Desktop](screenshots/desktop.png)

@@ -36,15 +36,10 @@ python3 -m http.server 8080
 
 Or open `index.html` directly in a browser.
 
-## Design tokens
+## Design direction
 
-| Token | Value |
-|-------|-------|
-| Ink | `#0c1b2a` |
-| Cream | `#f7f3ec` |
-| Coral | `#ff6b4a` |
-| Radius | `14px` |
-| Fonts | Fraunces (display) · Space Grotesk (body) |
+Editorial newspaper: cream paper, black rules, signal red, sharp cards
+
 
 ## Screenshots
 

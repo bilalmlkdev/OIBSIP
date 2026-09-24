@@ -90,7 +90,7 @@
       Math.abs(f - ABS_ZERO_F) < 0.001;
 
     note.textContent = atAbsZero
-      ? "You’re at absolute zero - the coldest possible temperature."
+      ? "You're at absolute zero - the coldest possible temperature."
       : "Converted all three units from your " + from + " input.";
     note.classList.toggle("is-warn", atAbsZero);
   });

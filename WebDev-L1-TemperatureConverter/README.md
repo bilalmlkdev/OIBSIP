@@ -45,6 +45,10 @@ python3 -m http.server 8080
 | `-300` | °C | Error (below absolute zero) |
 | `abc` | any | Error (non-numeric) |
 
+## Design direction
+
+Lab worksheet: graph paper, mono readouts, stamp button
+
 ## Screenshots
 
 ![Desktop](screenshots/desktop.png)
