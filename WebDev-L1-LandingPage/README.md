@@ -1,4 +1,4 @@
-# Landing Page — NovaDesk
+# Landing Page - NovaDesk
 
 **OIBSIP · Web Development & Designing · Level 1 · Task 1**
 
@@ -12,7 +12,7 @@ Built with **HTML5 + CSS3** (tiny optional JS for the mobile menu only).
 - [x] Content sections: Features (6 cards), About + stats, Testimonials (3)
 - [x] Footer with contact + social placeholder links
 - [x] Consistent palette across all sections (ink navy, warm cream, coral)
-- [x] Responsive via CSS Grid + Flexbox — verified at 1440 / 768 / 375 / 320
+- [x] Responsive via CSS Grid + Flexbox - verified at 1440 / 768 / 375 / 320
 - [x] No overlap; explicit `box-sizing`, spacing scale, safe paddings
 - [x] Typography: display serif (Fraunces) vs body sans (Space Grotesk), clear scale
 
@@ -48,10 +48,9 @@ Or open `index.html` directly in a browser.
 
 ## Screenshots
 
-Capture into `screenshots/` after final review:
+![Desktop](screenshots/desktop.png)
 
-- `desktop.png` — full page, 1440px
-- `mobile.png` — full page, 375px
+![Mobile](screenshots/mobile.png)
 
 ## Author
 

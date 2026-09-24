@@ -1,4 +1,4 @@
-/* Mobile nav only — page is static HTML/CSS otherwise (task allows optional JS) */
+/* Mobile nav only - page is static HTML/CSS otherwise (task allows optional JS) */
 (function () {
   var toggle = document.querySelector(".nav__toggle");
   var menu = document.getElementById("nav-menu");

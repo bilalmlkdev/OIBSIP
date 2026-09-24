@@ -30,7 +30,7 @@
   }
 
   function format(n) {
-    if (!Number.isFinite(n)) return "—";
+    if (!Number.isFinite(n)) return "-";
     var rounded = Math.round(n * 100) / 100;
     return String(rounded);
   }
@@ -48,7 +48,7 @@
 
     // Reject non-numeric (allow leading -, decimal)
     if (!/^-?\d*\.?\d+$/.test(raw)) {
-      showError("Invalid input — use numbers only (e.g. 36.6 or -40).");
+      showError("Invalid input - use numbers only (e.g. 36.6 or -40).");
       input.focus();
       return;
     }
@@ -63,15 +63,15 @@
 
     // Absolute zero checks per source unit
     if (from === "C" && value < ABS_ZERO_C) {
-      showError("Below absolute zero: nothing can be colder than −273.15 °C.");
+      showError("Below absolute zero: nothing can be colder than -273.15 °C.");
       return;
     }
     if (from === "F" && value < ABS_ZERO_F) {
-      showError("Below absolute zero: nothing can be colder than −459.67 °F.");
+      showError("Below absolute zero: nothing can be colder than -459.67 °F.");
       return;
     }
     if (from === "K" && value < ABS_ZERO_K) {
-      showError("Kelvin cannot be negative — absolute zero is 0 K.");
+      showError("Kelvin cannot be negative - absolute zero is 0 K.");
       return;
     }
 
@@ -90,7 +90,7 @@
       Math.abs(f - ABS_ZERO_F) < 0.001;
 
     note.textContent = atAbsZero
-      ? "You’re at absolute zero — the coldest possible temperature."
+      ? "You’re at absolute zero - the coldest possible temperature."
       : "Converted all three units from your " + from + " input.";
     note.classList.toggle("is-warn", atAbsZero);
   });

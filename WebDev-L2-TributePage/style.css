@@ -1,4 +1,4 @@
-/* Tribute Page — two background colours across sections,
+/* Tribute Page - two background colours across sections,
    two font styles: Playfair Display (headings) + Source Sans 3 (body) */
 
 :root {
@@ -38,7 +38,7 @@ body {
   margin-inline: auto;
 }
 
-/* ——— Hero: deep violet background ——— */
+/* --- Hero: deep violet background --- */
 .hero {
   background:
     radial-gradient(circle at 70% 30%, rgba(201, 162, 39, 0.18), transparent 45%),
@@ -104,7 +104,7 @@ body {
   color: rgba(243, 239, 230, 0.55);
 }
 
-/* ——— Content sections: warm cream background ——— */
+/* --- Content sections: warm cream background --- */
 .section {
   padding: 3.75rem 0;
 }

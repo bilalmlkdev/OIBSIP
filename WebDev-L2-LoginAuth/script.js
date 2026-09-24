@@ -68,7 +68,7 @@
   }
 
   function isValidEmail(email) {
-    // Practical pattern — not full RFC
+    // Practical pattern - not full RFC
     return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email);
   }
 
@@ -105,7 +105,7 @@
     document.getElementById("dash-email").textContent = session.email;
     document.getElementById("dash-since").textContent = session.since
       ? new Date(session.since).toLocaleString()
-      : "—";
+      : "-";
     document.getElementById("dash-welcome").textContent =
       "Welcome, " + name.split(" ")[0] + ".";
     document.getElementById("dash-avatar").textContent =

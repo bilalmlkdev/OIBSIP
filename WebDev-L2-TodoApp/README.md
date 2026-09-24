@@ -2,7 +2,7 @@
 
 **OIBSIP · Web Development & Designing · Level 2 · Task 3**
 
-Task list with localStorage persistence — vanilla JS, no frameworks, no build step.
+Task list with localStorage persistence - vanilla JS, no frameworks, no build step.
 
 ## Feature checklist
 
@@ -12,9 +12,9 @@ Task list with localStorage persistence — vanilla JS, no frameworks, no build 
 - [x] Delete task
 - [x] **Counts:** `"N pending"` and `"N completed"`
 - [x] **Empty states** for both lists
-- [x] **localStorage** — survives refresh (`oibsip-todo-v1`)
+- [x] **localStorage** - survives refresh (`oibsip-todo-v1`)
 - [x] Validation: empty task rejected with visible error
-- [x] All events via `addEventListener` (event delegation on lists) — no inline `onclick`
+- [x] All events via `addEventListener` (event delegation on lists) - no inline `onclick`
 - [x] Responsive layout
 
 ## Run locally
@@ -38,8 +38,9 @@ python3 -m http.server 8080
 
 ## Screenshots
 
-- `screenshots/desktop.png`
-- `screenshots/mobile.png`
+![Desktop](screenshots/desktop.png)
+
+![Mobile](screenshots/mobile.png)
 
 ## Author
 

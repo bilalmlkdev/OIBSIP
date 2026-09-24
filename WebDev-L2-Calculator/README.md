@@ -2,22 +2,22 @@
 
 **OIBSIP · Web Development & Designing · Level 2 · Task 1**
 
-Browser calculator with a clean button grid. **Vanilla JS — no `eval()`**;
+Browser calculator with a clean button grid. **Vanilla JS - no `eval()`**;
 expression evaluation uses explicit operand/operator state.
 
 ## Feature checklist
 
 - [x] Display: current input + expression line + result
-- [x] Digits 0–9 + decimal point
-- [x] Operators: `+` `−` `×` `÷`
+- [x] Digits 0-9 + decimal point
+- [x] Operators: `+` `-` `×` `÷`
 - [x] Equals `=` evaluates the expression
 - [x] Clear `C` resets the display
 - [x] Backspace `⌫` removes last character
 - [x] Division by zero → `"Cannot divide by zero"` (no crash)
 - [x] Operator chaining: `5 + 3 × 2` works left-to-right without full reset
-  (standard calculator chaining — each operator applies the pending op first)
+  (standard calculator chaining - each operator applies the pending op first)
 - [x] **CSS Grid** for button layout (`grid-template-columns: repeat(4, 1fr)`)
-- [x] All events via `addEventListener` — **no inline `onclick`**
+- [x] All events via `addEventListener` - **no inline `onclick`**
 
 ## Extras
 
@@ -47,8 +47,9 @@ python3 -m http.server 8080
 
 ## Screenshots
 
-- `screenshots/desktop.png`
-- `screenshots/mobile.png`
+![Desktop](screenshots/desktop.png)
+
+![Mobile](screenshots/mobile.png)
 
 ## Author
 

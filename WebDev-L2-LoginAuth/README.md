@@ -3,7 +3,7 @@
 **OIBSIP · Web Development & Designing · Level 2 · Task 4**
 
 Client-side register / login / dashboard / logout demo. **Passwords hashed with
-SHA-256 (Web Crypto)** — never stored in plain text. Accounts live in
+SHA-256 (Web Crypto)** - never stored in plain text. Accounts live in
 `localStorage` only (this is a demo, not production auth).
 
 ## Feature checklist
@@ -16,7 +16,7 @@ SHA-256 (Web Crypto)** — never stored in plain text. Accounts live in
       duplicate email rejected, wrong password rejected, unknown email rejected
 - [x] **SHA-256 hashing** via `crypto.subtle.digest` (async)
 - [x] Session persists across refresh (`localStorage`)
-- [x] All events via `addEventListener` — no inline `onclick`
+- [x] All events via `addEventListener` - no inline `onclick`
 - [x] Tabs (Login / Register) with ARIA roles
 - [x] Responsive
 
@@ -38,7 +38,7 @@ python3 -m http.server 8080
 # open http://localhost:8080
 ```
 
-> `crypto.subtle` requires a **secure context** — `http://localhost` is fine;
+> `crypto.subtle` requires a **secure context** - `http://localhost` is fine;
 > other origins need HTTPS.
 
 ## Test cases
@@ -55,9 +55,21 @@ python3 -m http.server 8080
 
 ## Screenshots
 
-- `screenshots/register.png`
-- `screenshots/login.png`
-- `screenshots/dashboard.png`
+### Login
+
+![Login desktop](screenshots/desktop.png)
+
+### Register
+
+![Register](screenshots/register.png)
+
+### Dashboard
+
+![Dashboard](screenshots/dashboard.png)
+
+### Mobile
+
+![Login mobile](screenshots/mobile.png)
 
 ## Author
 

@@ -3,10 +3,10 @@
   var resultEl = document.getElementById("result");
   var keysEl = document.getElementById("keys");
 
-  // State — no eval(); we track operands and operator ourselves
+  // State - no eval(); we track operands and operator ourselves
   var current = "0";      // string being typed
   var previous = null;    // number operand
-  var operator = null;    // "+", "−", "×", "÷"
+  var operator = null;    // "+", "-", "×", "÷"
   var shouldReset = false; // next digit starts fresh after =
   var lastOperand = null;  // for repeated = (operator chaining style)
   var lastOperator = null;
@@ -39,7 +39,7 @@
   function applyOperator(a, op, b) {
     switch (op) {
       case "+": return a + b;
-      case "−": return a - b;
+      case "-": return a - b;
       case "×": return a * b;
       case "÷":
         if (b === 0) return null;
@@ -190,7 +190,7 @@
     if (e.key >= "0" && e.key <= "9") inputDigit(e.key);
     else if (e.key === ".") inputDecimal();
     else if (e.key === "+") setOperator("+");
-    else if (e.key === "-") setOperator("−");
+    else if (e.key === "-") setOperator("-");
     else if (e.key === "*") setOperator("×");
     else if (e.key === "/") { e.preventDefault(); setOperator("÷"); }
     else if (e.key === "Enter" || e.key === "=") equals();

@@ -1,14 +1,14 @@
-# Tribute Page — Ada Lovelace
+# Tribute Page - Ada Lovelace
 
 **OIBSIP · Web Development & Designing · Level 2 · Task 2**
 
-Visually engaging tribute to **Ada Lovelace** — mathematician and author of the
+Visually engaging tribute to **Ada Lovelace** - mathematician and author of the
 first published algorithm for a general-purpose machine.
 
 ## Feature checklist
 
 - [x] Page title with subject name + one-line tagline
-- [x] Prominent portrait frame (monogram placeholder — swap for a royalty-free
+- [x] Prominent portrait frame (monogram placeholder - swap for a royalty-free
       image from Unsplash / Wikimedia Commons if you prefer a photo)
 - [x] Biography: **4 original paragraphs** (paraphrased from public sources)
 - [x] Timeline of **6** key achievements (styled cards)
@@ -16,7 +16,7 @@ first published algorithm for a general-purpose machine.
 - [x] **2 background colours:** deep violet (`#1a1630`) hero/quote · warm cream
       (`#f6efe4`) body sections
 - [x] **2 font styles:** Playfair Display (display) · Source Sans 3 (body)
-- [x] Responsive — single column on small screens
+- [x] Responsive - single column on small screens
 
 ## Sections
 
@@ -46,8 +46,9 @@ Use a public-domain source (e.g. Wikimedia Commons *Ada Lovelace portrait*).
 
 ## Screenshots
 
-- `screenshots/desktop.png`
-- `screenshots/mobile.png`
+![Desktop](screenshots/desktop.png)
+
+![Mobile](screenshots/mobile.png)
 
 ## Author
 

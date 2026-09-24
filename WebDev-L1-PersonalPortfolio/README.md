@@ -1,4 +1,4 @@
-# Personal Portfolio — Bilal Malik
+# Personal Portfolio - Bilal Malik
 
 **OIBSIP · Web Development & Designing · Level 1 · Task 2**
 
@@ -8,13 +8,13 @@ Personal portfolio website (digital résumé) built with **HTML5 + CSS3**
 ## Feature checklist
 
 - [x] Profile/hero: name, role title, avatar placeholder (BM monogram)
-- [x] About Me: 2–3 sentences on background & interests
+- [x] About Me: 2-3 sentences on background & interests
 - [x] Skills: visual grid of technical skills (12 items)
 - [x] Projects: 3 cards (title, description, GitHub link)
 - [x] Contact: name, email fields + LinkedIn / GitHub links
 - [x] Smooth scroll navigation between sections (`scroll-behavior: smooth`)
 - [x] Consistent branding: dark teal palette, Outfit + JetBrains Mono
-- [x] Fully responsive — desktop and mobile (nav collapses ≤640px)
+- [x] Fully responsive - desktop and mobile (nav collapses ≤640px)
 
 ## Sections
 
@@ -46,8 +46,9 @@ python3 -m http.server 8080
 
 ## Screenshots
 
-- `screenshots/desktop.png`
-- `screenshots/mobile.png`
+![Desktop](screenshots/desktop.png)
+
+![Mobile](screenshots/mobile.png)
 
 ## Author
 
