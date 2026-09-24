@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bilal Malik — Web Developer</title>
+  <meta name="description" content="Portfolio of Bilal Malik — web developer building fast, accessible interfaces." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav__inner">
+      <a class="nav__logo" href="#top">BM<span>.</span></a>
+      <button class="nav__toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span>
+      </button>
+      <nav class="nav__menu" id="menu">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <p class="eyebrow">Hello, I’m</p>
+          <h1>Bilal Malik</h1>
+          <p class="hero__role">Web Developer &amp; Interface Designer</p>
+          <p class="hero__bio">
+            I build fast, accessible web products with clean HTML, CSS, and
+            JavaScript — and ship full UIs with modern frameworks when the job calls for it.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#projects">View projects</a>
+            <a class="btn btn--ghost" href="#contact">Contact me</a>
+          </div>
+        </div>
+        <div class="hero__avatar" aria-hidden="true">
+          <div class="avatar">
+            <span>BM</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <p class="eyebrow">About me</p>
+        <h2>Curious builder, steady shipper.</h2>
+        <p class="about__text">
+          I’m a web developer focused on front-end craft — layout systems,
+          performance, and interactions that feel intentional. I like turning
+          vague ideas into polished interfaces people actually enjoy using.
+        </p>
+        <p class="about__text">
+          Outside client-style projects I experiment with design systems,
+          scroll experiences, and small tools that remove friction from daily work.
+          Currently leveling up through hands-on builds and open collaboration.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="skills">
+      <div class="container">
+        <p class="eyebrow">Skills</p>
+        <h2>Tools I reach for.</h2>
+        <ul class="skills">
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript</li>
+          <li>TypeScript</li>
+          <li>React</li>
+          <li>Next.js</li>
+          <li>Tailwind CSS</li>
+          <li>Framer Motion</li>
+          <li>Git</li>
+          <li>Responsive Design</li>
+          <li>Accessibility</li>
+          <li>UI Design</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <p class="eyebrow">Projects</p>
+        <h2>Selected work.</h2>
+        <div class="projects">
+          <article class="project">
+            <div class="project__tag">Front-end</div>
+            <h3>NovaDesk Landing</h3>
+            <p>Marketing site with fixed nav, feature grid, and fully responsive layout in pure HTML/CSS.</p>
+            <a href="https://github.com/bilalmlkdev" target="_blank" rel="noopener noreferrer">View on GitHub →</a>
+          </article>
+          <article class="project">
+            <div class="project__tag">Web app</div>
+            <h3>Portfolio Dashboard</h3>
+            <p>Interactive portfolio shell with theme tokens, smooth scrolling, and component-driven UI.</p>
+            <a href="https://github.com/bilalmlkdev" target="_blank" rel="noopener noreferrer">View on GitHub →</a>
+          </article>
+          <article class="project">
+            <div class="project__tag">Tooling</div>
+            <h3>Temp Converter</h3>
+            <p>Validation-heavy temperature tool covering Celsius, Fahrenheit, and Kelvin edge cases.</p>
+            <a href="https://github.com/bilalmlkdev" target="_blank" rel="noopener noreferrer">View on GitHub →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="contact">
+      <div class="container contact">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Let’s build something.</h2>
+          <p class="contact__lead">Open to internships, collaborations, and interesting front-end problems.</p>
+        </div>
+        <form class="contact__form" action="#" method="post" onsubmit="return false;">
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Your name" autocomplete="name" />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="you@example.com" autocomplete="email" />
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="4" placeholder="Tell me about your project"></textarea>
+          </label>
+          <button class="btn btn--primary" type="submit">Send message</button>
+        </form>
+        <div class="contact__links">
+          <a href="mailto:hello@bilalmlkdev.example">hello@bilalmlkdev.example</a>
+          <a href="https://linkedin.com/in/bilalmlkdev" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://github.com/bilalmlkdev" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© 2026 Bilal Malik. Built with HTML, CSS &amp; care.</p>
+      <a href="#top">Back to top</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
