@@ -1,0 +1,246 @@
+/* Tribute Page — two background colours across sections,
+   two font styles: Playfair Display (headings) + Source Sans 3 (body) */
+
+:root {
+  --bg-deep: #1a1630;
+  --bg-warm: #f6efe4;
+  --ink: #2b2440;
+  --gold: #c9a227;
+  --muted: #6b6480;
+  --line: rgba(43, 36, 64, 0.12);
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-body: "Source Sans 3", system-ui, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--ink);
+  background: var(--bg-warm);
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+.container {
+  width: min(720px, calc(100% - 2.5rem));
+  margin-inline: auto;
+}
+
+.narrow {
+  width: min(680px, 100%);
+  margin-inline: auto;
+}
+
+/* ——— Hero: deep violet background ——— */
+.hero {
+  background:
+    radial-gradient(circle at 70% 30%, rgba(201, 162, 39, 0.18), transparent 45%),
+    var(--bg-deep);
+  color: #f3efe6;
+  text-align: center;
+  padding: 4rem 0 3.5rem;
+}
+
+.eyebrow {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 1rem;
+}
+
+.hero h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2.6rem, 7vw, 4rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.5rem;
+}
+
+.tagline {
+  font-size: 1.15rem;
+  color: rgba(243, 239, 230, 0.75);
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+.portrait {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.portrait__frame {
+  width: min(220px, 60vw);
+  aspect-ratio: 3 / 4;
+  border-radius: 50% / 40%;
+  background:
+    linear-gradient(160deg, #3d3560, #1a1630 60%),
+    var(--bg-deep);
+  border: 3px solid var(--gold);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+  display: grid;
+  place-items: center;
+}
+
+.portrait__frame span {
+  font-family: var(--font-display);
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--gold);
+}
+
+.portrait figcaption {
+  font-size: 0.85rem;
+  color: rgba(243, 239, 230, 0.55);
+}
+
+/* ——— Content sections: warm cream background ——— */
+.section {
+  padding: 3.75rem 0;
+}
+
+.bio {
+  background: var(--bg-warm);
+}
+
+h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 3vw, 2rem);
+  margin-bottom: 1.25rem;
+  color: var(--ink);
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 48px;
+  height: 3px;
+  background: var(--gold);
+  margin-top: 0.65rem;
+  border-radius: 2px;
+}
+
+.bio p {
+  margin-bottom: 1.1rem;
+  color: #3f3858;
+}
+
+/* Timeline */
+.timeline-section {
+  background: var(--bg-warm);
+  border-top: 1px solid var(--line);
+}
+
+.timeline {
+  list-style: none;
+  display: grid;
+  gap: 1rem;
+  counter-reset: none;
+}
+
+.timeline li {
+  display: grid;
+  grid-template-columns: 72px 1fr;
+  gap: 1rem;
+  padding: 1rem 1.15rem;
+  background: #fff;
+  border-left: 4px solid var(--gold);
+  border-radius: 0 12px 12px 0;
+  box-shadow: 0 6px 20px rgba(43, 36, 64, 0.06);
+}
+
+.timeline strong {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  color: var(--gold);
+}
+
+.timeline span {
+  color: var(--muted);
+  font-size: 0.98rem;
+}
+
+/* Quote */
+.quote-section {
+  background: var(--bg-deep);
+  color: #f3efe6;
+  padding: 4rem 0;
+}
+
+.quote-section h2 {
+  color: #f3efe6;
+}
+
+blockquote {
+  font-family: var(--font-display);
+  font-size: clamp(1.35rem, 3vw, 1.75rem);
+  font-style: italic;
+  line-height: 1.5;
+  color: #f3efe6;
+  border: none;
+  quotes: none;
+  position: relative;
+  padding-top: 0.5rem;
+}
+
+blockquote::before {
+  content: "“";
+  display: block;
+  font-size: 4rem;
+  line-height: 1;
+  color: var(--gold);
+  font-style: normal;
+  margin-bottom: -0.5rem;
+}
+
+blockquote cite {
+  display: block;
+  margin-top: 1.25rem;
+  font-family: var(--font-body);
+  font-style: normal;
+  font-size: 0.95rem;
+  color: var(--gold);
+  font-weight: 600;
+}
+
+/* Footer */
+.footer {
+  background: var(--bg-deep);
+  color: rgba(243, 239, 230, 0.55);
+  padding: 1.5rem 0 2rem;
+  border-top: 1px solid rgba(243, 239, 230, 0.08);
+  font-size: 0.9rem;
+}
+
+.footer__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 560px) {
+  .timeline li {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+  }
+
+  .hero {
+    padding: 3rem 0 2.5rem;
+  }
+
+  .section {
+    padding: 2.75rem 0;
+  }
+}
